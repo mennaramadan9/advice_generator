@@ -58,7 +58,7 @@ body {
   cursor: pointer;
 }
 #roll:hover {
-  box-shadow: 0 0px 18px var(--neon_green);
+  box-shadow: 0 0px 20px var(--neon_green);
 }
 #roll::after {
   content: url(images/icon-dice.svg);
