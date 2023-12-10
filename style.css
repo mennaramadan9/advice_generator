@@ -1,0 +1,70 @@
+:root {
+  --light_cyan: hsl(193, 38%, 86%);
+  --neon_green: hsl(150, 100%, 66%);
+  --grayish_blue: hsl(217, 19%, 38%);
+  --grayish_blue: hsl(217, 19%, 24%);
+  --dark_blue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--dark_blue);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--grayish_blue);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+}
+
+#advice {
+  color: var(--neon_green);
+  font-size: 11px;
+  letter-spacing: 3.2px;
+  font-weight: 500;
+}
+
+#advice-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--light_cyan);
+}
+
+#divider {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+#roll {
+  position: absolute;
+  background-color: var(--neon_green);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: -20px;
+  right: calc(50% - 25px);
+  cursor: pointer;
+}
+#roll:hover {
+  box-shadow: 0 0px 18px var(--neon_green);
+}
+#roll::after {
+  content: url(images/icon-dice.svg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 13px;
+  left: 0px;
+}
